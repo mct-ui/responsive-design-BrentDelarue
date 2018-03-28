@@ -2,21 +2,21 @@
   #FONTS
 \*------------------------------------*/
 @font-face {
-    font-family: : "HK Grotesk Web";
+    font-family: "HK Grotesk Web";
     font-weight: 200;
     src: url("../fonts/hkgrotesk-light-webfont.woff2") format("woff2"),
     url("../fonts/hkgrotesk-light-webfont.woff") format("woff");
 }
 
 @font-face {
-    font-family: : "HK Grotesk Web";
+    font-family: "HK Grotesk Web";
     font-weight: 400;
     src: url("../fonts/hkgrotesk-regular-webfont.woff2") format("woff2"),
     url("../fonts/hkgrotesk-regular-webfont.woff") format("woff");
 }
 
 @font-face {
-    font-family: : "HK Grotesk Web";
+    font-family: "HK Grotesk Web";
     font-weight: 600;
     src: url("../fonts/hkgrotesk-medium-webfont.woff2") format("woff2"),
     url("../fonts/hkgrotesk-medium-webfont.woff") format("woff");
@@ -343,6 +343,28 @@ a:focus {
     align-content: space-between;
 }
 
+.o-section {
+    overflow: auto;
+}
+
+.o-section + .o-section {
+    margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+    .o-section--lg + .o-section--lg,
+    .o-section--xl + .o-section--xl {
+        margin-top: 48px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .o-section--xl + .o-section--xl {
+        margin-top: 72px;
+    }
+}
+
+
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
@@ -467,6 +489,10 @@ a:focus {
     Will be mostly used on o-layout__item
 */
 
+.u-pt-clear {
+    padding-top: 0 ! important;
+}
+
 .u-width-auto {
     width: auto !important;
 }
@@ -552,6 +578,21 @@ a:focus {
 }
 
 @media (min-width: 768px) {
+    .o-row {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+
+    .o-row--md {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .o-row--lg {
+        padding-top: 72px;
+        padding-bottom: 48px;
+    }
+
     html {
         font-size: 20px;
         line-height: 1.6;

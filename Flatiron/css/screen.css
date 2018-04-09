@@ -351,6 +351,10 @@ a:focus {
     margin-top: 24px;
 }
 
+.o-row--neutral-x-light {
+    background-color: #F7F7FA;
+}
+
 @media (min-width: 768px) {
     .o-section--lg + .o-section--lg,
     .o-section--xl + .o-section--xl {
